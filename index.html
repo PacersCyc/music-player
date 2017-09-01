@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="referrer" content="never">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_397425_f7yaekbb7dmfgvi.css">
+	<title>自制音乐播放器</title>
+</head>
+
+<body>
+	<div class="FM-ct">
+		<!--播放器主界面-->
+		<div class="player">
+			<div class="main">
+				
+				<div class="song-info">
+					<ul class="lyric"></ul>
+					<img class="cover"></img>
+					<div class="songName"></div>
+					<div class="songer"></div>
+					<div class="channelName"></div>
+				</div>
+				<audio autoplay="autoplay">
+					您的浏览器不支持音频格式文件
+				</audio>
+			</div>
+
+			<!--进度条-->
+			<div class="basebar-ct">
+				<div class="basebar">
+					<div class="progressbar"></div>
+					<span class="cur-time"></span>
+					<span class="total-time"></span>
+				</div>
+			</div>			
+			
+
+			<!--控制面板-->
+			<div class="controls">
+				<span class="play-mode iconfont icon-danquxunhuan"></span>
+				<span class="prev-song iconfont icon-shangyishou"></span>
+				<span class="suspend iconfont icon-zanting"></span>
+				<span class="next-song iconfont icon-xiayishou"></span>
+				<span class="lyric-show iconfont icon-gecidiaozheng"></span>			
+			</div>
+			<div class="playlist">
+				Playlist
+				<div class="to-channels"></div>
+				<div class="to-songs"></div>
+			</div>
+		</div>
+
+
+		<!--电台频道面板-->
+		<div class="channels-ct">
+			<span class="iconfont icon-fanhui"></span>
+			<h2>电台频道</h2>
+			<ul class="channels"></ul>
+		</div>
+
+		<!--歌曲列表-->
+		<div class="songs-list">
+			<span class="iconfont icon-fanhui1"></span>
+			<ul class="tabs">
+				<li class="recent-listened">最近听过</li>
+			</ul>
+			<ul class="songs"></ul>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="./player.js" type="text/javascript"></script>
+</body>
+</html>
